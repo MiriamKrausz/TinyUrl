@@ -1,0 +1,19 @@
+{
+  "name": "tiny_url",
+  "version": "1.0.0",
+  "description": "TinyUrl is a URL shortening service designed for business clients who publish links to landing pages and online files. Once a client registers for the service, they can enter the URL of a landing page, website, or online file (such as a PDF guide stored in Google Drive) to generate a shortened URL. The shortened URL is constructed from the TinyUrl service address with a parameter identifying the original URL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiriamKrausz/TinyUrl.git"
+  },
+  "author": "miriam_krausz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiriamKrausz/TinyUrl/issues"
+  },
+  "homepage": "https://github.com/MiriamKrausz/TinyUrl#readme"
+}
