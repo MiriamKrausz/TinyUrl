@@ -11,20 +11,29 @@ TinyURL Service is a URL shortening service that allows users to create short al
 - **Click Tracking**: Track the number of clicks on each shortened URL.
 - **User Authentication**: Allow users to register accounts and manage their shortened URLs.
 
-## Usage
+## Installation
 
-### 1. Installation
+1. Clone the repository using Git:
 
-To use the TinyURL Service, follow these installation steps:
+<!-- GETTING STARTED -->
+## Getting Started
 
-1. Clone this repository to your local machine.
-2. Install the required dependencies by running `npm install`.
-3. Set up the MongoDB connection by specifying the `MONGODB_URI` environment variable.
-4. Optionally, configure other environment variables such as `PORT` for the server.
+1. Clone the repository
+    ```bash
+    git clone https://github.com/MiriamKrausz/TinyUrl
+    ```
+2. Install dependencies:
+    ```bash
+    npm i
+    ```
+3. Run the server:
+    ```bash
+    npm start
+    ```
 
-### 2. Running the Service
 
-After installation, you can start the TinyURL Service by running the following command:
+## License
+© 2024 Miriam Krausz All rights reserved.
 
-```bash
-npm start
+### contact
+0556764576 mk6764576@gmail.com
