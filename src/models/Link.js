@@ -1,7 +1,13 @@
-import mongoose from "mongoose";
-const LinkSchema = new mongoose.Schema({
-  originalUrl: { type: String, required: true }
+import mongoose from 'mongoose';
+
+const linkSchema = new mongoose.Schema({
+  originalUrl: { type: String, required: true },
+  clicks: [{
+    insertedAt: { type: Date, default: Date.now },
+    ipAddress: { type: String, required: true }
+  }]
 });
 
-const Link = mongoose.model('Link', LinkSchema);
-module.exports = Link;
+const Link = mongoose.model('Link', linkSchema);
+
+export default Link;

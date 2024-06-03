@@ -1,10 +1,22 @@
-import express from 'express'; 
-import linkController from '../controllers/linkController';
+import express from 'express';
+import {
+  createLink,
+  getLinks,
+  getLink,
+  updateLink,
+  deleteLink,
+} from '../controllers/LinkController.js';
+import { redirect } from '../controllers/LinkController.js';
+
 const router = express.Router();
 
-router.post('/links', linkController.createLink);
-router.get('/links/:id', linkController.getLink);
-router.put('/links/:id', linkController.updateLink);
-router.delete('/links/:id', linkController.deleteLink);
+router.post('/', createLink);
+router.get('/', getLinks);
+router.get('/:id', getLink);
+router.put('/:id', updateLink);
+router.delete('/:id', deleteLink);
 
-module.exports = router;
+// Redirect to original URL
+router.get('/:id', redirect);
+
+export default router;
