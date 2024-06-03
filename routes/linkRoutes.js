@@ -5,8 +5,9 @@ import {
   getLink,
   updateLink,
   deleteLink,
+  redirect,
+  getLinkClicks
 } from '../controllers/LinkController.js';
-import { redirect } from '../controllers/LinkController.js';
 
 const router = express.Router();
 
@@ -15,8 +16,7 @@ router.get('/', getLinks);
 router.get('/:id', getLink);
 router.put('/:id', updateLink);
 router.delete('/:id', deleteLink);
-
-// Redirect to original URL
-router.get('/:id', redirect);
+router.get('/:id/redirect', redirect);
+router.get('/:id/clicks', getLinkClicks);
 
 export default router;
